@@ -4,15 +4,30 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Loading style sheets and JS scripts from Internet instead of local source (Which is better?) -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--<link href="bootstrap/toolkit.min.css" rel="stylesheet">-->
+
+        <style>
+            .bg-primary {
+                background-color: #232323;
+            }
+            .bg-secondary {
+                background-color: #A7A9AB;
+            }
+            .bg-black {
+                background-color: black;
+            }
+            .bg-white {
+                background-color: white;
+            }
+        </style>
     </head>
 
     <body>
 
         <!-- Navbar (Really rough, non-working navbar. It does nothing.) -->
-        <nav class="navbar navbar-inverse navbar-expand-md navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-expand-lg navbar-fixed-top bg-primary">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <img class="navbar-brand" src="logo.png">
@@ -54,82 +69,93 @@
                     </div>
                 </div>
             </div>
+
+                
+            <!-- Asthetic line brakes (There has to be a better way to do this, CSS maybe?) -->
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
 
-        <!-- Asthetic line brakes (There has to be a better way to do this, CSS maybe?) -->
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
         <!-- Team History -->
-        <div class="block">
-            <div class="cointainer">
-                <div class="row">
-                    <center>
+        <div class="block bg-primary">
+                <div class="container">
+    
+                    <br/>
+    
+                    <div class="row">
+                        <div>
                         <h1 class="text-uppercase">
-                            Team History
+                            <center>
+                                Team History
+                            </center>
                         </h1>
-                        <br/>
-                    </center>
-                </div>
-                <div class="row">
-                    <!-- Blank DIV center -->
-                    <div class="col-sm-5">
-                        <img src="daisyReboot-small.png" alt="Daisy Reboot">
                     </div>
-                    <div class="col-sm-3">
-                        <!-- Start of list of Team Facts and Info -->
-                        <ul>
+                    
+                    <br/>
+                    
+                    <div class="row">
+                        <!-- Blank DIV center -->
+                        <div class="col-sm-5">
+                            <img src="daisyReboot-small.png" alt="Daisy Reboot">
+                        </div>
+                        <div class="col-sm-3">
+                            <!-- Start of list of Team Facts and Info -->
+                            <ul>
+                                <h3>
+                                    <li>
+                                        Year founded
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        # of team members
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        # of robots
+                                    </li>
+                                    <br/>
+                                    <li>
+                                        Year of chairman
+                                    </li>
+                                    <br/>
+                                </h3>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
                             <h3>
                                 <li>
-                                    Year founded
+                                    Media and tech
                                 </li>
                                 <br/>
                                 <li>
-                                    # of team members
+                                    Regional wins
                                 </li>
                                 <br/>
                                 <li>
-                                    # of robots
-                                </li>
-                                <br/>
-                                <li>
-                                    Year of chairman
+                                    Community events
                                 </li>
                                 <br/>
                             </h3>
-                        </ul>
+                        </div>
                     </div>
-                    <div class="col-sm-4">
-                        <h3>
-                            <li>
-                                Media and tech
-                            </li>
-                            <br/>
-                            <li>
-                                Regional wins
-                            </li>
-                            <br/>
-                            <li>
-                                Community events
-                            </li>
-                            <br/>
-                        </h3>
-                    </div>
+                    <br/>
                 </div>
+    
+                <!-- Asthetic line brakes (There has to be a better way to do this, CSS maybe?) -->
+                <br/>
+                <br/>
+                
             </div>
         </div>
-
-        <!-- Asthetic line brakes (There has to be a better way to do this, CSS maybe?) -->
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        
+            
         <!-- Our Sponsors (+ video) -->
         <div class="block">
             <div class="container">
+
+                <br/>
+
                 <div class="row">
                     <h1 class="text-uppercase">
                         Our Sponsors
@@ -163,11 +189,14 @@
         <br/>
         <br/>
         <br/>
-        <br/>
-
-        <!-- Sponsorship Tiers (What is this?) -->
-        <div class="block">
+    
+        <div class="block bg-primary">
+            <!-- Sponsorship Tiers (What is this?) -->
             <div class="container">
+                        
+                <!-- Asthetic line brakes (There has to be a better way to do this, CSS maybe?) -->
+                <br/>
+
                 <div class="row">
                     <h1 class="text-uppercase text-center">
                         Sponsorship Tiers
@@ -175,15 +204,80 @@
                 </div>
 
                 <!-- More line breaks -->
-                <br/>
+                <hr/>
                 <br/>
 
                 <!-- Sponsorshop tier thing -->
                 <div class="row">
-                    
+                    <ul>
+                        <h3 class="text-uppercase">
+                            bronze (up to $500)
+                        </h3>
+                        <h4>
+                            Invitation to sponsor appreciation banquet
+                        </h4>
+
+                        <br/>
+
+                        <h3 class="text-uppercase">
+                            silver (up to $1000)
+                        </h3>
+                        <h4>
+                            All Bronze level benefits<br/>
+                            Team T-Shirt<br/>
+                            Name/Logo on website<br/>
+                            Name on our competition banner
+                        </h4>
+
+                        <br/>
+
+                        <h3 class="text-uppercase">
+                            gold (up to $5000)
+                        </h3>
+                        <h4>
+                            All Bronze & Silver benefits<br/>
+                            Name/Logo on our team T-Shirt<br/>
+                            Recognition in official team name announced at all competitions
+                        </h4>
+
+                        <br/>
+
+                        <h3 class="text-uppercase">
+                            platinum (above $5000)
+                        </h3>
+                        <h4>
+                            All Bronze, Silver & Gold benefits<br/>
+                            Name/Logo on our robot<br/>
+                            Request Team 1538 robot to appear at company events
+                        </h4>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Asthetic line brakes (There has to be a better way to do this, CSS maybe?) -->
+            <br/>
+            <br/>
+            <br/>
+            
+        </div>
+
+        <div class="block">
+            <div class="container text-center">
+                <div class="row">
+                    <img src="assets\sponsor_logos\qualcomm.png" alt="Qualcomm Logo" class="img-fluid">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="assets\sponsor_logos\bluechip.jpg" alt="Blue Chip Logo" class="img-fluid ">
+                    </div>
+                    <div class="col-sm-6">
+                        <br/>
+                        <img src="assets\sponsor_logos\hth.jpg" alt="High Tech High Logo" class="img-fluid ">
+                    </div>
                 </div>
             </div>
         </div>
-
+        
     </body>
 </html>
